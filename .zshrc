@@ -37,6 +37,8 @@ alias rm="rm -i"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+
 export PATH="/Users/haoran/miniconda3/envs/llm/bin:$PATH"
 # export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export HOMEBREW_NO_AUTO_UPDATE=1
