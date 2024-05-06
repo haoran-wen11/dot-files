@@ -7,6 +7,8 @@ return {
     conform.setup({
       formatters_by_ft = {
         markdown = { "prettier" },
+        yaml = { "prettier" },
+        json = { "prettier" },
         lua = { "stylua" },
         python = { "ruff-lsp" },
       },

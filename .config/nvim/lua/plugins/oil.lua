@@ -3,7 +3,7 @@ return {
   event = "BufEnter",
   opts = {},
   -- Optional dependencies
-  dependencies = { "nvim-tree/nvim-web-devicons" },
+  dependencies = { "nvim-tree/nvim-web-devicons", lazy = true },
   config = function()
     local oil = require("oil")
     oil.setup({

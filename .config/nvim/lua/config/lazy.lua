@@ -23,4 +23,7 @@ require("lazy").setup({ { import = "plugins" }, { import = "plugins.lsp" } }, {
     enabled = true,
     notify = false,
   },
+  ui = {
+    backdrop = 100,
+  },
 })
