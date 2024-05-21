@@ -26,7 +26,7 @@ return {
 
     dashboard.section.buttons.val = {
       dashboard.button("n", "  New file", "<cmd>ene<CR>"),
-      -- dashboard.button("SPC wr", "  Restore session in cwd", "<cmd>SessionRestore<CR>"),
+      dashboard.button("SPC wr", "  Restore session in cwd", "<cmd>SessionRestore<CR>"),
       dashboard.button("SPC fr", "  Recent files", "<cmd>Telescope oldfiles<CR>"),
       dashboard.button("SPC ff", "  Find file", "<cmd>Telescope find_files<CR>"),
       dashboard.button("l", "󰒲  Lazy", "<cmd>Lazy<CR>"),

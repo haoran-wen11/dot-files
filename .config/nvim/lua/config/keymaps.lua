@@ -15,13 +15,13 @@ map("n", "<leader>ss", "<C-w>s", { desc = "Split window horizontally" })
 map("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
 map("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
 
--- map("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
--- map("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
--- map("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
--- map("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
--- map("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
-map("n", "<leader>t", ":TestNearest<CR>", { desc = "Test nearest to the cursor" })
-map("n", "<leader>T", ":TestFile<CR>", { desc = "Test file " })
+map("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
+map("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
+map("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
+map("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
+map("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
+-- map("n", "<leader>t", ":TestNearest<CR>", { desc = "Test nearest to the cursor" })
+-- map("n", "<leader>T", ":TestFile<CR>", { desc = "Test file " })
 
 -- delete character without copying
 map("n", "x", '"_x')
@@ -41,3 +41,7 @@ map("v", "<C-c>", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.v
 
 -- Oil
 map("n", "\\", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+
+-- Auto-session
+map("n", "<leader>wr", "<cmd>SessionRestore<CR>", { desc = "Restore session for cwd" }) -- restore last workspace session for current directory
+map("n", "<leader>ws", "<cmd>SessionSave<CR>", { desc = "Save session for auto session root dir" }) -- save workspace session for current working directory
